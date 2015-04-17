@@ -3,3 +3,26 @@
     .page-header
       h1= title
       small iCoding.net
+.navbar.navbar-default.navbar-fixed-bottom
+  .container
+    .navbar.header
+      a.navbar-brand(href="./") iCoding
+    p.navbar-text.navbar-right
+      a.navbar-link(href="#", data-toggle="modal", data-target="#signupModal") signUp
+      span &nbsp;|&nbsp;
+      a.navbar-link(href="#", data-toggle="modal", data-target="#signinModal") signIn
+#signupModal.modal.fade
+  .modal-dialog
+    .modal-content
+      form(method="POST", action="/user/signup")      
+        .modal-header signUp
+        .modal-body
+          .form-group
+            label(for="signupName") UserName
+            input#signupName.form-control(name="user[name]", type="text")
+          .form-group
+            label(for="signupPassword") Password
+            input#signupPassword.form-control(name="user[password]", type="text")
+        .modal-footer
+          button.btn.btn-default(type="button", data-dismiss="modal") close   	
+          button.btn.btn-default(type="button", data-dismiss="modal") submit   	

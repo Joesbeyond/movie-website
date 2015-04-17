@@ -2,23 +2,89 @@
 1 verbose cli [ '/home/joes/.nvm/v0.10.35/bin/node',
 1 verbose cli   '/home/joes/.nvm/v0.10.35/bin/npm',
 1 verbose cli   'install',
-1 verbose cli   '-d' ]
+1 verbose cli   'grunt-contrib-concurrent',
+1 verbose cli   '--save-dev' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
-4 error install Couldn't read dependencies
-5 error Failed to parse json
-5 error Unexpected end of input
-6 error File: /home/joes/Projects/Works/movie-website/package.json
-7 error Failed to parse package.json data.
-7 error package.json must be actual JSON, not just JavaScript.
-7 error
-7 error This is not a bug in npm.
-7 error Tell the package author to fix their package.json file. JSON.parse
-8 error System Linux 3.13.0-24-generic
-9 error command "/home/joes/.nvm/v0.10.35/bin/node" "/home/joes/.nvm/v0.10.35/bin/npm" "install" "-d"
-10 error cwd /home/joes/Projects/Works/movie-website
-11 error node -v v0.10.35
-12 error npm -v 1.4.28
-13 error file /home/joes/Projects/Works/movie-website/package.json
-14 error code EJSONPARSE
-15 verbose exit [ 1, true ]
+4 warn package.json @ No description
+5 warn package.json @ No repository field.
+6 warn package.json @ No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'grunt-contrib-concurrent', null ]
+9 verbose cache add name=undefined spec="grunt-contrib-concurrent" args=["grunt-contrib-concurrent",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'grunt-contrib-concurrent',
+10 verbose parsed url   path: 'grunt-contrib-concurrent',
+10 verbose parsed url   href: 'grunt-contrib-concurrent' }
+11 silly lockFile 06ef22ac-grunt-contrib-concurrent grunt-contrib-concurrent
+12 verbose lock grunt-contrib-concurrent /home/joes/.npm/06ef22ac-grunt-contrib-concurrent.lock
+13 silly lockFile 06ef22ac-grunt-contrib-concurrent grunt-contrib-concurrent
+14 silly lockFile 06ef22ac-grunt-contrib-concurrent grunt-contrib-concurrent
+15 verbose addNamed [ 'grunt-contrib-concurrent', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile bc5c1f85-grunt-contrib-concurrent grunt-contrib-concurrent@
+18 verbose lock grunt-contrib-concurrent@ /home/joes/.npm/bc5c1f85-grunt-contrib-concurrent.lock
+19 silly addNameRange { name: 'grunt-contrib-concurrent', range: '*', hasData: false }
+20 verbose request where is /grunt-contrib-concurrent
+21 verbose request registry https://registry.npmjs.org/
+22 verbose request id b32d6737ccfea499
+23 verbose url raw /grunt-contrib-concurrent
+24 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-concurrent' ]
+25 verbose url resolved https://registry.npmjs.org/grunt-contrib-concurrent
+26 verbose request where is https://registry.npmjs.org/grunt-contrib-concurrent
+27 info trying registry request attempt 1 at 11:01:07
+28 http GET https://registry.npmjs.org/grunt-contrib-concurrent
+29 http 404 https://registry.npmjs.org/grunt-contrib-concurrent
+30 verbose headers { date: 'Fri, 17 Apr 2015 03:01:14 GMT',
+30 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+30 verbose headers   'content-type': 'application/json',
+30 verbose headers   'cache-control': 'max-age=0',
+30 verbose headers   'content-length': '51',
+30 verbose headers   'accept-ranges': 'bytes',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   age: '0',
+30 verbose headers   'x-served-by': 'cache-nrt6134-NRT',
+30 verbose headers   'x-cache': 'MISS',
+30 verbose headers   'x-cache-hits': '0',
+30 verbose headers   'x-timer': 'S1429239673.664325,VS0,VE444',
+30 verbose headers   'keep-alive': 'timeout=10, max=50',
+30 verbose headers   connection: 'Keep-Alive' }
+31 silly registry.get cb [ 404,
+31 silly registry.get   { date: 'Fri, 17 Apr 2015 03:01:14 GMT',
+31 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 silly registry.get     'content-type': 'application/json',
+31 silly registry.get     'cache-control': 'max-age=0',
+31 silly registry.get     'content-length': '51',
+31 silly registry.get     'accept-ranges': 'bytes',
+31 silly registry.get     via: '1.1 varnish',
+31 silly registry.get     age: '0',
+31 silly registry.get     'x-served-by': 'cache-nrt6134-NRT',
+31 silly registry.get     'x-cache': 'MISS',
+31 silly registry.get     'x-cache-hits': '0',
+31 silly registry.get     'x-timer': 'S1429239673.664325,VS0,VE444',
+31 silly registry.get     'keep-alive': 'timeout=10, max=50',
+31 silly registry.get     connection: 'Keep-Alive' } ]
+32 silly lockFile bc5c1f85-grunt-contrib-concurrent grunt-contrib-concurrent@
+33 silly lockFile bc5c1f85-grunt-contrib-concurrent grunt-contrib-concurrent@
+34 error 404 404 Not Found: grunt-contrib-concurrent
+34 error 404
+34 error 404 'grunt-contrib-concurrent' is not in the npm registry.
+34 error 404 You should bug the author to publish it
+34 error 404
+34 error 404 Note that you can also install from a
+34 error 404 tarball, folder, or http url, or git url.
+35 error System Linux 3.13.0-24-generic
+36 error command "/home/joes/.nvm/v0.10.35/bin/node" "/home/joes/.nvm/v0.10.35/bin/npm" "install" "grunt-contrib-concurrent" "--save-dev"
+37 error cwd /home/joes/Projects/Works/movie-website
+38 error node -v v0.10.35
+39 error npm -v 1.4.28
+40 error code E404
+41 verbose exit [ 1, true ]
