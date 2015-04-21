@@ -52,7 +52,17 @@ app.get('/movie/:id', function(req, res) {
 //admin page
 app.get('/admin/movie', function(req, res) {
 	res.render('admin', {
-	    title: 'admin'
+	    title: 'back add list'
+	    movie: {
+	    	title: '',
+	    	doctor: '',
+	    	country: '',
+	    	year: '',
+	    	poster: '',
+	    	flash: '',
+	    	summary: '',
+	    	language: ''
+	    }
 	})
 })
 
