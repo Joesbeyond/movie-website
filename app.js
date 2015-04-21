@@ -66,6 +66,18 @@ app.get('/admin/movie', function(req, res) {
 	})
 })
 
+//admin update
+app.get('/admin/update/:id', function(req, res) {
+	var id =  req.params.id
+	if (id) {
+		Movie.findById(id, function(err, movie) {
+			res.render('admin', {
+				title: update page,
+				movie: movie
+			})
+		})
+	}
+})
 //admin post movie
 app.post('/admin/movie/new', function() {
 	var id = req.body.movie._id
